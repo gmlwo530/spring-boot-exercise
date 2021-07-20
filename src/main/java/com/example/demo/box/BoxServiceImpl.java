@@ -8,7 +8,7 @@ import com.example.demo.item.ItemDto;
 import com.example.demo.item.ItemRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Optional;
@@ -16,7 +16,7 @@ import java.util.Optional;
 import static com.example.demo.exception.ExceptionType.DUPLICATE_ENTITY;
 import static com.example.demo.exception.ExceptionType.ENTITY_NOT_FOUND;
 
-@Component
+@Service
 public class BoxServiceImpl implements BoxService {
 
     @Autowired
